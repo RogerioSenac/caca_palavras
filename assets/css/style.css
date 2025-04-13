@@ -1,0 +1,104 @@
+.fonte {
+    font-family: Georgia;
+    color: blue;
+    font-size: 5rem;
+}
+
+body {
+    cursor: pointer;
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+}
+
+body:not(.tab):not(.item) {
+    cursor: default;
+}
+
+.cabecalho {
+    margin: 10px;
+    background-color: hwb(60 86% 4% / 0.842);
+    width: 40%;
+    justify-self: center
+}
+
+h2 {
+    gap: 5px 0px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    /* margin-bottom: 5px; */
+
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    background-color: #d6d60d;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-self: center;
+}
+
+.tab {
+    align-content: center;
+    border: solid 3px red;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.tab td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(66, 66, 66);
+    background-color: rgb(51, 160, 151);
+    font-size: larger;
+    padding: 5px;
+    position: relative;
+}
+
+.cor {
+    color: rgb(240, 248, 255);
+    border: solid 3px black;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.highlight {
+    background-color: rgb(255, 235, 59) !important;
+    color: rgb(2, 124, 33);
+}
+
+
+.item {
+    padding: 5px;
+    margin: 5px;
+    border: solid black;
+    text-align: center;
+    width: 70px;
+    height: 80px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.imagem {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.item p {
+    margin-top: 3px;
+    font-weight: bold;
+}
