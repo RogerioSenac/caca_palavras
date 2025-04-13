@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça Palavras</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h2>CAÇA PALAVRAS - FATEC</h2>
+        <h3>Click em uma das figura abaixo para destaca-la na tabela!</h3>
+    </div>
+        
+    <div class="wrapper">
+        <div class="row">
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-sorvete" src="./assets/img/sorvete.png" alt="sorvete">
+                <p>sorvete</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-bombom" src="./assets/img/bombom.png" alt="bombom">
+                <p>bombom</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-biscoito" src="./assets/img/biscoito.png" alt="biscoito">
+                <p>biscoito</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-lanche" src="./assets/img/lanche.png" alt="lanche">
+                <p>lanche</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-torta" src="./assets/img/torta.png" alt="torta">
+                <p>torta</p>
+            </div>
+        </div>
+
+        <table class="tab">
+            <tr>
+                <td>A</td>
+                <td>R</td>
+                <td>Q</td>
+                <td>U</td>
+                <td>I</td>
+                <td>V</td>
+                <td>O</td>
+                <td>S</td>
+                <td class="cor" data-word="pudim">P</td>
+                <td>R</td>
+                <td>E</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>O</td>
+                <td class="cor" data-word="sorvete">S</td>
+                <td>O</td>
+                <td>R</td>
+                <td>Q</td>
+                <td>U</td>
+                <td>E</td>
+                <td class="cor" data-word="pudim">U</td>
+                <td>T</td>
+                <td>I</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td class="cor" data-word="bombom">B</td>
+                <td class="cor" data-word="bombom">O</td>
+                <td class="cor" data-word="bombom">M</td>
+                <td class="cor" data-word="bombom">B</td>
+                <td class="cor" data-word="bombom">O</td>
+                <td class="cor" data-word="bombom">M</td>
+                <td>L</td>
+                <td class="cor" data-word="pudim">D</td>
+                <td>U</td>
+                <td class="cor" data-word="pastel">P</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>O</td>
+                <td class="cor" data-word="sorvete">R</td>
+                <td>E</td>
+                <td class="cor" data-word="biscoito">I</td>
+                <td>R</td>
+                <td>Q</td>
+                <td>U</td>
+                <td class="cor" data-word="pudim">I</td>
+                <td>M</td>
+                <td class="cor" data-word="pastel">A</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>L</td>
+                <td class="cor" data-word="sorvete">V</td>
+                <td>N</td>
+                <td class="cor" data-word="biscoito">S</td>
+                <td>O</td>
+                <td>L</td>
+                <td>D</td>
+                <td class="cor" data-word="pudim">M</td>
+                <td>E</td>
+                <td class="cor" data-word="pastel">S</td>
+                <td>P</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>A</td>
+                <td class="cor" data-word="sorvete">E</td>
+                <td>T</td>
+                <td class="cor" data-word="biscoito">C</td>
+                <td>S</td>
+                <td>E</td>
+                <td>I</td>
+                <td>V</td>
+                <td>L</td>
+                <td class="cor" data-word="pastel">T</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>C</td>
+                <td class="cor" data-word="sorvete">T</td>
+                <td>A</td>
+                <td class="cor" data-word="biscoito">O</td>
+                <td class="cor" data-word="lanche">L</td>
+                <td class="cor" data-word="lanche">A</td>
+                <td class="cor" data-word="lanche">N</td>
+                <td class="cor" data-word="lanche">C</td>
+                <td class="cor" data-word="lanche">H</td>
+                <td class="cor" data-word="lanche">E</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>H</td>
+                <td class="cor" data-word="sorvete">E</td>
+                <td>L</td>
+                <td class="cor" data-word="biscoito ">I</td>
+                <td>E</td>
+                <td>R</td>
+                <td>V</td>
+                <td class="cor" data-word="bolo">B</td>
+                <td class="cor" data-word="bolo">O</td>
+                <td class="cor" data-word="bolo">L</td>
+                <td class="cor" data-word="bolo">O</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>I</td>
+                <td>S</td>
+                <td>I</td>
+                <td class="cor" data-word="torta">T</td>
+                <td class="cor" data-word="torta">O</td>
+                <td class="cor" data-word="torta">R</td>
+                <td class="cor" data-word="torta">T</td>
+                <td class="cor" data-word="torta">A</td>
+                <td>R</td>
+                <td>A</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>N</td>
+                <td>O</td>
+                <td class="cor" data-word="doce">D</td>
+                <td class="cor" data-word="doce">O</td>
+                <td class="cor" data-word="doce">C</td>
+                <td class="cor" data-word="doce">E</td>
+                <td>N</td>
+                <td class="cor" data-word="balas">L</td>
+                <td>Q</td>
+                <td>U</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>E</td>
+                <td>U</td>
+                <td>Q</td>
+                <td>U</td>
+                <td>E</td>
+                <td>I</td>
+                <td>J</td>
+                <td class="cor" data-word="balas">A</td>
+                <td>L</td>
+                <td>A</td>
+                <td>R</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>L</td>
+                <td>R</td>
+                <td>M</td>
+                <td>R</td>
+                <td>V</td>
+                <td>E</td>
+                <td>L</td>
+                <td class="cor" data-word="balas">S</td>
+                <td>O</td>
+                <td>M</td>
+                <td>A</td>
+            </tr>
+        </table>
+
+        <div class="row">
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-pudim" src="./assets/img/pudim.png" alt="pudim">
+                <p>pudim</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-pastel" src="./assets/img/pastel.png" alt="pastel">
+                <p>pastel</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-bolo" src="./assets/img/bolo.png" alt="bolo">
+                <p>bolo</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-doce" src="./assets/img/doce.png" alt="doce">
+                <p>doce</p>
+            </div>
+            <div class="item col-6 col-lg-4">
+                <img class="imagem word-balas" src="./assets/img/balas.png" alt="balas">
+                <p>balas</p>               
+            </div>
+        </div>
+    </div>    
+    <script src="./assets/js/script.js"></script>   
+</body>
+</html>
